@@ -1,0 +1,272 @@
+@CHARSET "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Sans-Serif;
+	line-height: 1.5em;
+}
+
+#header {
+	background: #ccc;
+	height: 100px;
+}
+
+#header h1 {
+	margin: 0;
+	padding-top: 15px;
+}
+
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 100%;
+}
+
+#nav {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 230px;
+	margin-left: -100%;
+	background: #eee;
+}
+
+#footer {
+	clear: left;
+	width: 100%;
+	background: #ccc;
+	text-align: center;
+	padding: 4px 0;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+#content {
+	margin-left: 230px; /* Same as 'nav' width */
+}
+
+.innertube {
+	margin: 15px; /* Padding for content */
+	margin-top: 0;
+}
+
+p {
+	color: #555;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a {
+	color: darkgreen;
+	text-decoration: none;
+}
+
+
+#container{
+	width : 800px
+}
+#feedback {
+	font-size: 0.7em;
+}
+
+#device_lst_area{
+display:inline;
+}
+
+#log_detail_list{
+width:100%;
+}
+
+#log_detail_list td{
+	border-bottom: 1px solid #ddd;
+}
+
+#event_list_area{
+display : block;
+height : 300px;
+width : 400px;
+overflow : auto;
+background : #eeeeee ;
+}
+
+#event_detail_area{
+display : block;
+height : 300px;
+width : 400px;
+overflow : auto;
+font-size : 0.8em;
+background : #eeeeee ;
+
+}
+
+#log_list_area{
+display : block;
+height : 200px;
+width : 400px; 
+overflow : auto;
+background : #eeeeee ;
+}
+
+#log_detail_area{
+display : block;
+height : 200px; 
+width : 400px;
+overflow : auto;
+font-size : 0.8em;
+background : #eeeeee ;
+}
+
+#scan_device{
+height : 192px;
+width : 250px;
+font-size : 0.8em;
+}
+
+#sel_leader {
+height : 60px;
+width : 250px;
+font-size : 0.8em;
+}
+
+#scaned_device_list{
+	list-style-type: none;
+}
+
+#sel_follower {
+height : 120px;
+width : 250px;
+padding-right:20px;
+font-size : 0.8em;
+}
+
+#sel_leader ul{
+list-style-type: none;	
+overflow : auto;
+height : 40px; 
+-webkit-padding-start : 0px;
+margin : 0;
+}
+
+#sel_follower ul{
+list-style-type: none;
+overflow : auto;
+height : 80px;
+-webkit-padding-start : 0px;
+margin : 0;
+}
+
+.selectable .ui-selecting {
+	background: #FECA40;
+}
+
+.selectable .ui-selected {
+	background: #F39814;
+	color: white;
+}
+
+#device_lst_area .selectable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display:block;
+}
+
+#event_list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#event_list li{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+#log_list li{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+
+#event_list .sort-handle {
+	display: none;
+}
+
+#event_list .ui-selected .sort-handle
+ {
+	display: inline;
+	padding: 0 0.5em;
+	cursor: pointer;
+}
+
+li.ui-selected {
+	background-color: #8888cc;
+	color: white;
+	font-weight: bold;
+	background-image: none;
+}
+li.ui-selecting {
+	background-color: #ccccff;
+	color: white;
+	background-image: none;
+}
+
+#log_list_area .selectable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#evtListArea, #evtDetailBtnArea {
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#evtDetailInfoTable , #evtListArea, #evtDetailTemplateTable {
+	padding-left: 20px;
+}
+
+
+.selectable li {
+	margin: 3px;
+	padding: 0.0em;
+	font-size: 0.8em;
+	height: 20px;
+}
+
+input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.delete {
+	text-decoration:none;
+	float:right; 
+    line-height: 22px;
+    font-size: 18px; 
+    text-align: right;
+    padding-right: 8px;
+    width: 20px;
+    height: 100%;
+    right: 0;
+    color: red;
+}
